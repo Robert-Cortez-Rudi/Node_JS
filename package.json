@@ -1,7 +1,7 @@
 {
-  "name": "node_js",
+  "name": "api-backend-ads",
   "version": "1.0.0",
-  "description": "Projeto com node.js com API e Backend",
+  "description": "Projeto node com express para construir API backend",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
@@ -9,11 +9,18 @@
     "dev": "node --watch src/server.js"
   },
   "keywords": [
-    "Node_JS", "API", "Express", "Prisma", "Backend"
+    "api",
+    "express",
+    "prisma",
+    "backend"
   ],
-  "author": "Robert Cortez Rudi",
+  "author": "Renan Cavichi",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.5.0",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.5.0"
   }
 }
