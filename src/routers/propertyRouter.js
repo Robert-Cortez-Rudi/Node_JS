@@ -7,9 +7,10 @@ import changeTypePropertyController from '../controllers/property/changeTypeProp
 
 const router = express.Router()
 
-router.get('/', getPropertyController)
+router.get('/list', getPropertyController)
+router.get('/:id', () => {}) // GET de um único property
 router.post('/', createPropertyController)
-router.put('/', updatePropertyController)
+router.put('/:id', updatePropertyController)
 router.delete('/:id', deletePropertyController)
 router.patch('/type', changeTypePropertyController)
 
